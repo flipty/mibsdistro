@@ -229,4 +229,14 @@ function df_disable_comments_admin_bar() {
     }
 }
 add_action('init', 'df_disable_comments_admin_bar');
+// This theme uses wp_nav_menu() in one location.
+
+register_nav_menus(array(
+	'menu-1' => esc_html__('Primary', 'mibs')
+	//'menu-titles' => esc_html__('Titles Menu', 'trc'),
+	//'menu-ivr' => esc_html__('Intervention Records', 'trc'),
+	//'menu-resources' => esc_html__('Resources', 'trc')
+));
+
+
 ?>

@@ -1,6 +1,6 @@
-//hsbaird.js
+//mibs.js
 
-var hsbaird = {
+var mibs = {
 
     hamburger: function(){
       var $hamburger = $('.nav-trigger a');
@@ -24,32 +24,12 @@ var hsbaird = {
           e.preventDefault();
         })
       });
-    },
-
-    gallery: function(){
-      var $image = $('a.gallery-image');
-      $image.each(function(){
-        var $thisGallery = $(this).data('gallery');
-        $(this).colorbox();
-      });
-    },
-
-    scrollHandler: function(){
-      $(window).scroll(function() {
-          if ($(document).scrollTop() > 100) {
-              $('body').addClass('scrolled');
-          }
-          else {
-              $('body').removeClass('scrolled');
-          }
-      });
     }
 
 }
 
 $(document).ready(function(){
-    hsbaird.scrollHandler();
-    hsbaird.hamburger();
-    hsbaird.nav();
-    hsbaird.gallery();
+    mibs.hamburger();
+    mibs.nav();
+    console.log('MIBS js');
 });
