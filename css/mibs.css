@@ -1,5 +1,5 @@
 @media only screen and (min-width: 1024px) {
-  /* line 39, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_variables.scss */
+  /* line 40, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_variables.scss */
   .mobile-only {
     display: none !important;
   }
@@ -1738,261 +1738,242 @@ hr {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);
 }
 
-/* line 1, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
-html {
-  font-family: 'Lora', serif;
-  font-size: 14px;
+@font-face {
+  font-family: 'Cool';
+  src: url("fonts/cool.woff") format("woff");
 }
 
 /* line 6, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+html {
+  font-family: 'Cool', serif;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 13, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
 body {
   margin: 0;
   padding: 0;
   background: #111b27;
 }
 
-/* line 12, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+/* line 19, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+p, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+
+/* line 25, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
 header {
   background: #394149;
 }
 
-/* line 13, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
-header .inner {
-  padding: 50px;
-}
-
-/* line 17, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
-header ul {
+/* line 28, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+header nav ul {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
   padding: 0;
-  margin: 0;
+  margin: 45px 0;
   list-style: none;
 }
 
-/* line 27, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+/* line 38, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+header nav ul li.menu-item-home a {
+  text-indent: -999em;
+  display: block;
+  height: 138px;
+  width: 300px;
+  background: url("/wp-content/themes/mibs/images/logo-stack.png") no-repeat;
+  background-size: 100%;
+}
+
+/* line 47, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+header nav ul li a {
+  display: block;
+  line-height: 140px;
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: lowercase;
+}
+
+/* line 53, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+header nav ul li a:hover {
+  color: #FFDD33;
+  text-decoration: none;
+}
+
+/* line 63, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
 main {
   background: #394149;
   color: #ffffff;
 }
 
-/* line 32, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+/* line 68, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
 footer {
   color: #ffffff;
+  padding-top: 60px;
 }
 
-/* line 2, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page .wp-caption {
-  max-width: 100%;
-}
-
-/* line 4, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page .wp-caption img {
-  max-width: 100%;
+/* line 72, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+footer .branding img {
+  max-width: 100px;
   height: auto;
+  margin-bottom: 40px;
 }
 
-/* line 9, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page p.wp-caption-text {
-  background: rgba(0, 0, 0, 0.15);
-  padding: 0.5em 1em;
-  margin-top: 0;
-  font-size: 1.15em;
-  line-height: 1.7em;
-}
-
-/* line 18, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-home div.wp-caption {
-  margin: 0 auto;
-}
-
-/* line 20, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-home div.wp-caption img {
-  width: 100%;
-  height: auto;
-}
-
-/* line 24, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-home div.wp-caption p.wp-caption-text {
-  background: rgba(0, 0, 0, 0.15);
-  padding: 0.5em 1em;
-  margin-top: 0;
-  font-size: 1.15em;
-  line-height: 1.7em;
-}
-
-/* line 32, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-home blockquote {
-  border: solid 2px rgba(0, 0, 0, 0.25);
-  border-left: none;
-  border-right: none;
-  padding: 25px;
-}
-
-/* line 37, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-home blockquote > * {
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-/* line 45, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-photos .row ul, .page-template-template-photos li, .single-gallery .row ul, .single-gallery li {
-  list-style: none;
-  padding: 0;
-}
-
-/* line 48, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-photos .row ul img, .page-template-template-photos li img, .single-gallery .row ul img, .single-gallery li img {
-  max-width: 100%;
-}
-
-/* line 52, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-photos ul.slides, .single-gallery ul.slides {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  padding-left: 0;
-}
-
-/* line 57, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-photos ul.slides li, .single-gallery ul.slides li {
-  margin: 15px;
-  margin-top: 0;
-}
-
-@media only screen and (max-width: 992px) {
-  /* line 57, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-  .page-template-template-photos ul.slides li, .single-gallery ul.slides li {
-    width: 40%;
-  }
-}
-
-/* line 65, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-photos .row.galleries, .single-gallery .row.galleries {
-  text-align: center;
-}
-
-/* line 73, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.single-gallery nav.menu-primary-menu-container .menu-item-31 a {
-  background: linear-gradient(180deg, #FFDD33 61%, #ccaa00 100%);
+/* line 78, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+footer .branding p a {
   color: #ffffff;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.75);
 }
 
-/* line 83, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-officers .person {
-  text-align: center;
-  width: 100%;
+/* line 83, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+footer nav {
+  margin-bottom: 60px;
 }
 
-/* line 86, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-officers .person .image {
-  overflow: hidden;
-  height: 250px;
+/* line 85, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+footer nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-@media only screen and (max-width: 992px) {
-  /* line 86, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-  .page-template-template-officers .person .image {
-    height: auto;
-  }
+/* line 89, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+footer nav ul li {
+  margin-bottom: 20px;
 }
 
-/* line 92, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-officers .person .image img {
-  width: 100%;
+/* line 91, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+footer nav ul li a {
+  font-size: 18px;
+  color: #c39a2d;
+}
+
+/* line 94, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+footer nav ul li a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 102, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+footer p.contact {
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+/* line 107, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+footer p.legal {
+  font-size: 14px;
+  color: #858585;
+}
+
+/* line 1, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+.page-template-default, .post-template-default {
+  color: #ffffff;
+}
+
+/* line 3, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+.page-template-default main, .post-template-default main {
+  padding: 0 0 60px 0;
+}
+
+/* line 6, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+.page-template-default .wp-caption, .post-template-default .wp-caption {
+  max-width: 100%;
+}
+
+/* line 8, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+.page-template-default .wp-caption img, .post-template-default .wp-caption img {
+  max-width: 100%;
   height: auto;
+}
+
+/* line 13, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+.page-template-default p.wp-caption-text, .post-template-default p.wp-caption-text {
+  padding: 0.5em 1em;
+  margin-top: 0;
+  font-size: 1.15em;
+  line-height: 1.7em;
+}
+
+/* line 3, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_home.scss */
+.home section.hero .panels {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* line 8, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_home.scss */
+.home section.hero .panels .panel {
   position: relative;
-  top: -20%;
+  width: calc(25% - 150px);
+  transition: all 500ms;
+  background: #000000;
 }
 
-/* line 98, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-officers .person .image .nophoto {
-  height: 250px;
-  background: rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: center;
-}
-
-@media only screen and (max-width: 992px) {
-  /* line 98, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-  .page-template-template-officers .person .image .nophoto {
-    height: auto;
-    padding: 25px 0;
-  }
-}
-
-/* line 109, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-officers .person .image .nophoto span {
-  font-size: 24px;
-  color: rgba(0, 0, 0, 0.15);
-}
-
-/* line 116, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-officers .person .content h3 {
-  height: 2em;
-  font-size: 1em;
-  margin-bottom: 25px;
-}
-
-/* line 120, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-officers .person .content h3 span {
+/* line 13, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_home.scss */
+.home section.hero .panels .panel a {
   display: block;
-  color: #0033CC;
+  width: 100%;
 }
 
-/* line 129, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-officers .officers .person .image {
-  height: 165px;
+/* line 21, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_home.scss */
+.home section.hero .panels .panel label {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  font-size: 3vw;
+  transition: all 500ms;
 }
 
-/* line 134, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-officers .officers .person .image .nophoto {
-  height: 175px;
+/* line 27, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_home.scss */
+.home section.hero .panels .panel label img {
+  max-width: 150px;
+  height: auto;
 }
 
-/* line 149, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.wp-block-table table {
-  border-collapse: collapse;
+/* line 32, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_home.scss */
+.home section.hero .panels .panel.active {
+  width: 550px;
 }
 
-/* line 151, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.wp-block-table table td {
-  border: solid 1px rgba(0, 0, 0, 0.25);
-  padding: 0.5em;
+/* line 36, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_home.scss */
+.home section.hero .panels .panel.initial-active label {
+  left: 40%;
 }
 
-/* line 160, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-#newsletter-archive .post-content ul {
-  display: flex;
-  flex-flow: row wrap;
+/* line 48, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_home.scss */
+.home section.intro {
+  padding: 75px 0;
 }
 
-/* line 163, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-#newsletter-archive .post-content ul li {
-  width: 50%;
-  margin-bottom: 10px;
+/* line 50, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_home.scss */
+.home section.intro .inner {
+  padding: 75px;
+  background: rgba(0, 0, 0, 0.5);
 }
 
-/* line 166, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-#newsletter-archive .post-content ul li a {
+/* line 53, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_home.scss */
+.home section.intro .inner h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+/* line 57, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_home.scss */
+.home section.intro .inner p {
   font-size: 18px;
+  line-height: 1.9em;
 }
 
-/* line 176, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-newsletters .newsletters > div {
-  text-align: center;
-}
-
-/* line 178, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-newsletters .newsletters > div a {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-/* line 188, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-template-newsletter-archive main ul {
-  padding-left: 20px;
+/* line 61, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_home.scss */
+.home section.intro .inner img {
+  margin-top: -100px;
 }
 
 /*# sourceMappingURL=mibs.css.map */

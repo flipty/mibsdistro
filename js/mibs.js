@@ -24,6 +24,24 @@ var mibs = {
           e.preventDefault();
         })
       });
+    },
+
+    heroSlider: function(){
+      var $slider = $('section.hero');
+      var $panelContainer = $slider.find('.panels');
+      var $panels = $slider.find('.panel');
+      var $firstpanel = $slider.find('.panel.initial-active');
+      $panels.each(function(){
+        var $this = $(this);
+        $this.on('mouseover', function(e){
+          $panels.removeClass('active');
+          $this.addClass('active');
+        });
+      });
+      $panelContainer.on('mouseout', function(){
+        $panels.removeClass('active');
+        $firstpanel.addClass('active');
+      });
     }
 
 }
@@ -31,5 +49,6 @@ var mibs = {
 $(document).ready(function(){
     mibs.hamburger();
     mibs.nav();
+    mibs.heroSlider();
     console.log('MIBS js');
 });

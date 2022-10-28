@@ -1,0 +1,66 @@
+.home {
+  section.hero {
+    .panels {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      overflow: hidden;
+      .panel {
+        position: relative;
+        width: calc(25% - 150px);
+        transition: all 500ms;
+        background: $black;
+        a {
+          display: block;
+          width: 100%;
+        }
+        img {
+          // background: $black;
+          // opacity: 0.8;
+        }
+        label {
+          position: absolute;
+          bottom: 15px;
+          left: 15px;
+          font-size: 3vw;
+          transition: all 500ms;
+          img {
+            max-width: 150px;
+            height: auto;
+          }
+        }
+        &.active {
+          width: 550px;
+        }
+        &.initial-active {
+          label {
+            left: 40%;
+          }
+          // &.active {
+          //   label {
+          //     left: 20%;
+          //   }
+          // }
+        }
+      }
+    }
+  }
+  section.intro {
+    padding: 75px 0;
+    .inner {
+      padding: 75px;
+      background: $black50;
+      h1 {
+        font-size: 36px;
+        margin-bottom: 15px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 1.9em;
+      }
+      img {
+        margin-top: -100px;
+      }
+    }
+  }
+}

@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'Cool';
+  src: url('fonts/cool.woff') format('woff');
+}
+
 html {
-  font-family: 'Lora', serif;
+  font-family: 'Cool', serif;
   font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
@@ -9,17 +16,46 @@ body {
   background: #111b27;
 }
 
-header {
-  .inner {
-    padding: 50px;
-  }
-  background: #394149;
-  ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    li {
+p, h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
 
+header {
+  background: #394149;
+  nav {
+    ul {
+      width: 100%;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      padding: 0;
+      margin: 45px 0;
+      list-style: none;
+      li {
+        &.menu-item-home {
+          a {
+            text-indent: -999em;
+            display: block;
+            height: 138px;
+            width: 300px;
+            background: url('/wp-content/themes/mibs/images/logo-stack.png') no-repeat;
+            background-size: 100%;
+          }
+        }
+        a {
+          display: block;
+          line-height: 140px;
+          color: $white;
+          font-size: 18px;
+          text-transform: lowercase;
+          &:hover {
+            color: $gold;
+            text-decoration: none;
+          }
+        }
+      }
     }
   }
 }
@@ -31,4 +67,45 @@ main {
 
 footer {
   color: $white;
+  padding-top: 60px;
+  .branding {
+    img {
+      max-width: 100px;
+      height: auto;
+      margin-bottom: 40px;
+    }
+    p {
+      a {
+        color: $white;
+      }
+    }
+  }
+  nav {
+    margin-bottom: 60px;
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      li {
+        margin-bottom: 20px;
+        a {
+          font-size: 18px;
+          color: $gold-dark;
+          &:hover {
+            color: $white;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  p.contact {
+    font-size: 18px;
+    color: $white;
+    line-height: 1.7;
+  }
+  p.legal {
+    font-size: 14px;
+    color: #858585;
+  }
 }
