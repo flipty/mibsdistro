@@ -1883,23 +1883,42 @@ footer p.legal {
   padding: 0 0 60px 0;
 }
 
-/* line 6, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+/* line 5, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+.page-template-default main h1, .post-template-default main h1 {
+  margin-bottom: 45px;
+}
+
+/* line 8, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+.page-template-default main h2, .post-template-default main h2 {
+  margin-bottom: 15px;
+}
+
+/* line 14, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+.page-template-default main p, .post-template-default main p {
+  font-size: 18px;
+  line-height: 1.7em;
+  margin-bottom: 15px;
+}
+
+/* line 19, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+.page-template-default main a, .post-template-default main a {
+  color: #FFDD33;
+}
+
+/* line 21, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+.page-template-default main a:hover, .post-template-default main a:hover {
+  color: #c39a2d;
+}
+
+/* line 27, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
 .page-template-default .wp-caption, .post-template-default .wp-caption {
   max-width: 100%;
 }
 
-/* line 8, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+/* line 29, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
 .page-template-default .wp-caption img, .post-template-default .wp-caption img {
   max-width: 100%;
   height: auto;
-}
-
-/* line 13, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
-.page-template-default p.wp-caption-text, .post-template-default p.wp-caption-text {
-  padding: 0.5em 1em;
-  margin-top: 0;
-  font-size: 1.15em;
-  line-height: 1.7em;
 }
 
 /* line 3, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_home.scss */

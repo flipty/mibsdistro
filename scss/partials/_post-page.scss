@@ -2,6 +2,27 @@
   color: $white;
   main {
     padding: 0 0 60px 0;
+    h1 {
+      margin-bottom: 45px;
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+    h3 {
+
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.7em;
+      margin-bottom: 15px;
+    }
+    a {
+      color: $gold;
+      &:hover {
+        color: $gold-dark;
+      }
+    }
+
   }
   .wp-caption {
     max-width: 100%;
@@ -10,10 +31,5 @@
       height: auto;
     }
   }
-  p.wp-caption-text {
-    padding: 0.5em 1em;
-    margin-top: 0;
-    font-size: 1.15em;
-    line-height: 1.7em;
-  }
+
 }

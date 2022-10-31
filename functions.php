@@ -11,9 +11,9 @@ if( function_exists('acf_add_options_page') ) {
 //modify default search form code and content
 function html5_search_form( $form ) {
 $form = '<form role="search" method="get" id="search-form" action="' . home_url( '/' ) . '" >
-<label class="screen-reader-text" for="s">' . __('',  'ecolo') . '</label>
+<label class="screen-reader-text" for="s">' . __('',  'mibs') . '</label>
 <input type="search" value="' . get_search_query() . '" name="s" id="s" placeholder="Search..." />
-<input type="submit" id="searchsubmit" value="'. esc_attr__('Search', 'ecolo') .'" />
+<input type="submit" id="searchsubmit" value="'. esc_attr__('Search', 'mibs') .'" />
 </form>';
 return $form;
 }
@@ -53,7 +53,7 @@ function numeric_posts_nav() {
 
     /** Previous Post Link */
     if ( get_previous_posts_link() )
-        printf( '<li class="prev">%s</li>' . "\n", get_previous_posts_link( __( '<', 'ecolo' ) ) );
+        printf( '<li class="prev">%s</li>' . "\n", get_previous_posts_link( __( '<', 'mibs' ) ) );
 
     /** Link to first page, plus ellipses if necessary */
     if ( ! in_array( 1, $links ) ) {
@@ -83,7 +83,7 @@ function numeric_posts_nav() {
 
     /** Next Post Link */
     if ( get_next_posts_link() )
-        printf( '<li class="next">%s</li>' . "\n", get_next_posts_link( __( '>', 'ecolo' )) );
+        printf( '<li class="next">%s</li>' . "\n", get_next_posts_link( __( '>', 'mibs' )) );
 
     echo '</ul></div>' . "\n";
 
@@ -95,7 +95,7 @@ function wpex_get_excerpt( $args = array() ) {
 		'post'            => '',
 		'length'          => 40,
 		'readmore'        => false,
-		'readmore_text'   => esc_html__( 'read more', 'ecolo' ),
+		'readmore_text'   => esc_html__( 'read more', 'mibs' ),
 		'readmore_after'  => '',
 		'custom_excerpts' => true,
 		'disable_more'    => true,
