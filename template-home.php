@@ -14,6 +14,8 @@ $homeImage = get_field('main_image');
 $productsImage = get_field('products_image');
 $aboutImage = get_field('about_image');
 $contactImage = get_field('contact_image');
+$headline = get_field('headline');
+$intro_image = get_field('intro_image');
 ?>
 		<section class="hero">
 				<div class="panels">
@@ -41,11 +43,11 @@ $contactImage = get_field('contact_image');
 				<div class="inner">
 					<div class="row">
 						<div class="col-md-8">
-							<h1>Bringing Analog Into the 21st Century</h1>
+							<h1><?php echo $headline;?></h1>
 							<?php the_content();?>
 						</div>
 						<div class="col-md-4">
-							<img src="/wp-content/themes/mibs/images/etna.png" alt="">
+							<?php echo wp_get_attachment_image($intro_image, 'full');?>
 						</div>
 					</div>
 				</div>

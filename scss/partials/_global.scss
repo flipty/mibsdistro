@@ -55,6 +55,11 @@ header {
             text-decoration: none;
           }
         }
+        &.current-menu-item {
+          a {
+            color: $gold-dark;
+          }
+        }
       }
     }
   }

@@ -1806,68 +1806,73 @@ header nav ul li a:hover {
   text-decoration: none;
 }
 
-/* line 63, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+/* line 59, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+header nav ul li.current-menu-item a {
+  color: #c39a2d;
+}
+
+/* line 68, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
 main {
   background: #394149;
   color: #ffffff;
 }
 
-/* line 68, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+/* line 73, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
 footer {
   color: #ffffff;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
-/* line 73, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+/* line 78, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
 footer .branding img {
   max-width: 100px;
   height: auto;
   margin-bottom: 40px;
 }
 
-/* line 79, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+/* line 84, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
 footer .branding p a {
   color: #ffffff;
 }
 
-/* line 84, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+/* line 89, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
 footer nav {
   margin-bottom: 60px;
 }
 
-/* line 86, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+/* line 91, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
 footer nav ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-/* line 90, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+/* line 95, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
 footer nav ul li {
   margin-bottom: 20px;
 }
 
-/* line 92, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+/* line 97, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
 footer nav ul li a {
   font-size: 18px;
   color: #c39a2d;
 }
 
-/* line 95, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+/* line 100, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
 footer nav ul li a:hover {
   color: #ffffff;
   text-decoration: none;
 }
 
-/* line 103, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+/* line 108, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
 footer p.contact {
   font-size: 18px;
   color: #ffffff;
   line-height: 1.7;
 }
 
-/* line 108, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
+/* line 113, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_global.scss */
 footer p.legal {
   font-size: 14px;
   color: #858585;
