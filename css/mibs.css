@@ -1903,24 +1903,43 @@ footer p.legal {
   font-size: 18px;
   line-height: 1.7em;
   margin-bottom: 15px;
+  font-family: sans-serif;
 }
 
-/* line 19, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+/* line 20, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
 .page-template-default main a, .post-template-default main a {
   color: #FFDD33;
 }
 
-/* line 21, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+/* line 22, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
 .page-template-default main a:hover, .post-template-default main a:hover {
   color: #c39a2d;
 }
 
-/* line 27, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+/* line 26, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+.page-template-default main .wp-block-button, .post-template-default main .wp-block-button {
+  margin-bottom: 15px;
+}
+
+/* line 28, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+.page-template-default main .wp-block-button a.wp-block-button__link, .post-template-default main .wp-block-button a.wp-block-button__link {
+  padding-bottom: 0.4em !important;
+  font-family: 'Cool' !important;
+}
+
+/* line 31, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+.page-template-default main .wp-block-button a.wp-block-button__link:hover, .post-template-default main .wp-block-button a.wp-block-button__link:hover {
+  background: #FFDD33;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* line 40, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
 .page-template-default .wp-caption, .post-template-default .wp-caption {
   max-width: 100%;
 }
 
-/* line 29, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
+/* line 42, ../../../../../Users/tesch/Development/mibsdistro.com/wp-content/themes/mibs/scss/partials/_post-page.scss */
 .page-template-default .wp-caption img, .post-template-default .wp-caption img {
   max-width: 100%;
   height: auto;

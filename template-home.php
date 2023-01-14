@@ -25,7 +25,7 @@ $intro_image = get_field('intro_image');
 					</div>
 					<div class="panel" id="this-panel-2">
 						<a href="/products"><?php echo wp_get_attachment_image($productsImage, 'full');?></a>
-						<label>products</label>
+						<label>brands</label>
 					</div>
 					<div class="panel" id="this-panel-3">
 						<a href="/about"><?php echo wp_get_attachment_image($aboutImage, 'full');?></a>

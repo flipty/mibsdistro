@@ -15,11 +15,24 @@
       font-size: 18px;
       line-height: 1.7em;
       margin-bottom: 15px;
+      font-family: sans-serif;
     }
     a {
       color: $gold;
       &:hover {
         color: $gold-dark;
+      }
+    }
+    .wp-block-button {
+      margin-bottom: 15px;
+      a.wp-block-button__link {
+        padding-bottom: 0.4em !important;  
+        font-family: 'Cool' !important;
+        &:hover {
+          background: $gold;
+          color: $black;
+          text-decoration: none;
+        }
       }
     }
 

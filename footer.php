@@ -6,7 +6,7 @@
         <p class="contact">
           MIBS Distro LLC<br>
           Gig Harbor, WA<br>
-          <a href="tel: +18003431225">1-800-343-1225</a>
+          <a href="tel: +12532096792">(253) 209-6792</a>
         </p>
       </div>
       <div class="col-md-5 navigation">
