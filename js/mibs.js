@@ -26,6 +26,22 @@ var mibs = {
       });
     },
 
+    photoGallery: function(){
+      $currentImage = $('.current-image img');
+      var $slides = $('ul.slides');
+      var $slide = $slides.find('li');
+      $slide.each(function(){
+        var $trigger = $(this).find('a');
+        var $this = $(this);
+        $trigger.on('click', function(e){
+          var $thisSrc = $this.find('img').attr('src');
+          $currentImage.attr('src', $thisSrc);
+          $currentImage.attr('srcset', '').attr('sizes','');
+          e.preventDefault();
+        })
+      });
+    },
+
     heroSlider: function(){
       var $slider = $('section.hero');
       var $panelContainer = $slider.find('.panels');
@@ -47,8 +63,9 @@ var mibs = {
 }
 
 $(document).ready(function(){
+    console.log('MIBS js');
     mibs.hamburger();
     mibs.nav();
     mibs.heroSlider();
-    console.log('MIBS js');
+    mibs.photoGallery();
 });

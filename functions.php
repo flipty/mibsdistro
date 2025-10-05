@@ -238,5 +238,4 @@ register_nav_menus(array(
 	//'menu-resources' => esc_html__('Resources', 'trc')
 ));
 
-
 ?>

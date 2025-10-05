@@ -20,7 +20,7 @@
 			<div class="col-sm-12">
 				<h1>Not Found</h1>
 
-				<p>That page either doesn't exist or has moved. Please continue to <a href="https://blog.entrust.com">blog.entrust.com</a></p>
+				<p>That page either doesn't exist or has moved. </p>
 			</div>
 		</div>
 	</div>

@@ -5,11 +5,23 @@
       flex-flow: row;
       justify-content: space-between;
       overflow: hidden;
+      @include breakpoint(mobile){
+        flex-flow: row wrap;
+      }
       .panel {
         position: relative;
         width: calc(25% - 150px);
         transition: all 500ms;
         background: $black;
+        @include breakpoint(mobile){
+          width: 100%;
+          transition: none;
+          height: 100px;
+          overflow: hidden;
+          &#this-panel-1 {
+            display: none;
+          }
+        }
         a {
           display: block;
           width: 100%;
@@ -17,6 +29,11 @@
         img {
           // background: $black;
           // opacity: 0.8;
+          @include breakpoint(mobile){
+            width: 100%;
+
+          }
+
         }
         label {
           position: absolute;
@@ -24,6 +41,9 @@
           left: 15px;
           font-size: 3vw;
           transition: all 500ms;
+          @include breakpoint(mobile){
+            font-size: 30px;            
+          }
           img {
             max-width: 150px;
             height: auto;
@@ -31,10 +51,16 @@
         }
         &.active {
           width: 550px;
+            @include breakpoint(mobile){
+              width: 100%;
+            }
         }
         &.initial-active {
           label {
             left: 40%;
+            @include breakpoint(mobile){
+              left: 15px;
+            }
           }
           // &.active {
           //   label {
@@ -50,16 +76,31 @@
     .inner {
       padding: 75px;
       background: $black50;
+      @include breakpoint(mobile){
+        padding: 15px;
+      }
+
       h1 {
         font-size: 36px;
         margin-bottom: 15px;
+        @include breakpoint(mobile){
+          font-size: 28px;
+        }
       }
       p {
         font-size: 18px;
         line-height: 1.9em;
+        @include breakpoint(mobile){
+          font-size: 16px;
+        }
       }
       img {
         margin-top: -100px;
+        @include breakpoint(mobile){
+          max-width: 100%;
+          height: auto;
+          margin-top: 0;
+        }
       }
       a {
         color: $gold; 

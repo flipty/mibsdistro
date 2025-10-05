@@ -42,3 +42,8 @@ $black10: rgba(0,0,0,0.1);
     display: none !important;
   }
 }
+
+//hides SAT-specific field from store locator locations
+[data-cft="ok7n0gdfsw"] {
+  display: none;
+}

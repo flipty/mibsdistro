@@ -6,7 +6,10 @@
         <p class="contact">
           MIBS Distro LLC<br>
           Gig Harbor, WA<br>
-          <a href="tel: +12532096792">(253) 209-6792</a>
+          <a href="tel: +12532096792">(253) 209-6792</a><br><br>Connect with us:<br>
+          <a href="https://www.facebook.com/profile.php?id=61559922855504" target="_blank">Facebook</a> | 
+          <a href="https://www.instagram.com/mibsdistro/" target="_blank">Instagram</a> | 
+          <a href="https://www.youtube.com/@MIBSDistro" target="_blank">YouTube</a>
         </p>
       </div>
       <div class="col-md-5 navigation">

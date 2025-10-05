@@ -24,7 +24,17 @@ p, h1, h2, h3, h4, h5, h6 {
 
 header {
   background: #394149;
+  @include breakpoint(mobile){
+    padding-bottom: 15px;    
+  }
+
   nav {
+    @include breakpoint(mobile){
+      background: url('/wp-content/themes/mibs/images/logo-stack.png') no-repeat;
+      background-size: 100px;
+      background-position: 0 15px;
+      padding-top: 5px;
+    }
     ul {
       width: 100%;
       display: flex;
@@ -33,6 +43,9 @@ header {
       padding: 0;
       margin: 45px 0;
       list-style: none;
+      @include breakpoint(mobile){
+        margin: 75px 0 0 0;
+      }
       li {
         &.menu-item-home {
           a {
@@ -42,6 +55,12 @@ header {
             width: 300px;
             background: url('/wp-content/themes/mibs/images/logo-stack.png') no-repeat;
             background-size: 100%;
+            @include breakpoint(mobile){
+              width: auto;
+              height: auto;
+              text-indent: 0;
+              background: none;
+            }
           }
         }
         a {
@@ -50,6 +69,9 @@ header {
           color: $white;
           font-size: 18px;
           text-transform: lowercase;
+          @include breakpoint(mobile){
+            line-height: 26px;
+          }
           &:hover {
             color: $gold;
             text-decoration: none;
@@ -113,5 +135,41 @@ footer {
   p.legal {
     font-size: 14px;
     color: #858585;
+  }
+}
+
+.button-container {
+  display: flex;
+  flex-flow: row wrap;
+  .button-holder {
+    margin-right: 15px;
+    @include breakpoint(mobile){
+      margin-right: 0;
+      width: 100%;
+    }
+    a.button {
+      display: block;
+      border-radius: 8px;
+      border: solid 2px $gold;
+      color: $gold;
+      text-align: center;
+      font-size: 16px;
+      padding-top: 0.75em;
+      padding-bottom: 0.5em;
+      padding-left: 2em;
+      padding-right: 2em;
+      min-width: 230px;
+      text-decoration: none;
+      @include breakpoint(mobile){
+        min-width: auto;
+        width: 100%;
+        margin-bottom: 15px;
+      }
+      &:hover {
+        text-decoration: none;
+        background: $gold;
+        color: #444;
+      }
+    }
   }
 }
